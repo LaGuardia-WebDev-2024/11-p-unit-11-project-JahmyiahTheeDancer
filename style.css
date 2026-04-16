@@ -10,3 +10,13 @@ html {
 h1 {
   font-family: "Poetsen One", sans-serif;
 }
+.mov1p{background-color: rgba(255, 127, 80, 0.63);}
+
+.mov2p{background-color: rgba(220, 20, 20, 0.575);}
+
+.mov3p{background-color: rgba(139, 0, 0, 0.603);}
+
+h1 {
+  border-block: 5px solid rgba(223, 40, 40, 0.493);
+
+  

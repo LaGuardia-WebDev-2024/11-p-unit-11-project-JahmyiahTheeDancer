@@ -6,7 +6,7 @@ Requirements
 [  ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ yes] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -32,15 +32,15 @@ Select ONE Additional
     <h1>My Top 3 Movies of <span>This Year</span></h1>
     <ol>
       <li>
-        <h3 id="mov1">Movie #1</h3>
-        <p class="mov1p">More about this memory.</p>
+        <h3 id="mov1">1. Sinners By Ryan Coogler</h3>
+        <p class="mov1p">I love Sinners. I love Sinners because of it's plot, I like the idea how in this movie you can't trust everyone and also how people would do anything to try and steal/take something from you. In this situations culture and </p>
        
         <img class="mov1" width="200">
       </li>
 
       <li>
-        <h3 id="mov2">Movie #2</h3>
-        <p class="mov2p">More about this memory.</p>
+        <h3 id="mov2">2. Scream 1 By Kevin Williamson</h3>
+        <p class="mov2p"> Scream is one of my favorite Horror/Mystery. To be honest I like all of the Scream movies, mostly because I just think it's cool. My biggest thing is how even though the orignal Ghostface died there are still different people taking on the role killing people as Ghostface. I don't mind the fact they've dragged out te franchise </p>
         <img class="mov2" width="200">
       </li>
 
@@ -53,26 +53,32 @@ Select ONE Additional
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-     
+    $(".mov1p").hide()
+     $(".mov2p").hide()
+      $(".mov3p").hide()
       // ======================== Button #1
+
       $("#mov1-button").click(function () {
         $("#mov1").css("color", "black");
         $(".mov1").attr("src","https://dtbeacon.net/wp-content/uploads/2025/05/sinners-photo.png")
-       $("html").css("background-color","brown")
-      });
+       $("html").css("background-color","rgb(212, 112, 40)")
+       $(".mov1p").show(1000)
+        });
 
       // ======================== Button #2
       $("#mov2-button").click(function () {
         $("#mov2").css("color", "black");
         $(".mov2").attr("src","https://static.wikia.nocookie.net/scream/images/5/5a/Scream_1996_poster_2.jpg/revision/latest/scale-to-width-down/250?cb=20220219120848")
-     $("html").css("background-color","grey")
+     $("html").css("background-color","rgb(75, 87, 99)")
+     $(".mov2p").show(1000)
       });
 
       // ======================== Button #3
       $("#mov3-button").click(function () {
         $("#movf3").css("color", "black");
         $(".mov3").attr("src","https://upload.wikimedia.org/wikipedia/en/b/bc/The_Hate_U_Give_poster.png")
-      $("html").css("background-color","red")
+      $("html").css("background-color","rgb(201, 0, 0)")
+      $(".mov3p").show(1000)
       });
     
 
